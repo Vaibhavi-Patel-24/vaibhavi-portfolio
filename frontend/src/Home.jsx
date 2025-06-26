@@ -31,37 +31,38 @@ const Home = () => {
 
   return (
     
-    <div className="bg-neutral min-h-screen w-screen scroll-smooth">
+    <div className="bg-neutral min-h-screen w-full overflow-x-hidden scroll-smooth">
       <Navbar/>
 
 
       <div className="relative flex items-start justify-between w-full sm:min-h-screen overflow-hidden px-10 bg-neutral">
-        <div className="z-10 text-white w-1/2 pt-16 sm:pl-10 pl-1">
-        <p className="text-xl sm:text-4xl leading-snug font-nunito">
-            <span className="text-sm sm:text-lg group block mb-5 sm:mb-3 font-semibold w-fit hover:text-purple-500 hover:border hover:border-purple-500 px-4 py-2 transition-all duration-300">
+        <div className="flex flex-col justify-center item-center z-10 text-white sm:w-1/2 pt-14 sm:pt-20 sm:pl-10 pl-1">
+        <p className="sm:animate-[slideFadeInLeft_0.8s_ease-out_forwards] text-xl sm:text-4xl leading-snug font-nunito">
+            <span className={`text-sm sm:text-lg group block mb-5 sm:mb-4 font-semibold w-fit hover:text-purple-500 hover:border hover:border-purple-500 sm:px-4 py-2 transition-all duration-300 ${isSmallScreen ? 'animated-text' : ''}`}>
               <span className='inline-block'>I'm a</span>
-              <span className="text-5xl sm:text-6xl ml-1">Full-stack</span>
+              <span className="text-5xl sm:text-6xl inline-block">Full-stack</span>
             </span>
 
-            <span className="text-5xl sm:text-6xl group block mb-5 sm:mb-3 ml-20 w-fit hover:text-purple-500 hover:border hover:border-purple-500 px-4 py-2 transition-all duration-300">
+            <span className={`text-5xl sm:text-6xl group block mb-5 sm:mb-4 sm:ml-20 w-fit hover:text-purple-500 hover:border hover:border-purple-500 sm:px-4 py-2 transition-all duration-300 font-semibold ${isSmallScreen ? 'animated-text' : ''}`}>
               Developer &
             </span>
 
-            <span className="text-5xl sm:text-6xl group block mb-5 sm:mb-3 w-fit hover:text-purple-500 hover:border hover:border-purple-500 px-4 py-2 transition-all duration-300">
+            <span className={`text-5xl sm:text-6xl group block mb-5 sm:mb-4 w-fit hover:text-purple-500 hover:border hover:border-purple-500 sm:px-4 py-2 transition-all duration-300 font-semibold ${isSmallScreen ? 'animated-text' : ''}`}>
               Software
             </span>
 
-            <span className="text-5xl sm:text-6xl group block ml-20 w-fit hover:text-purple-500 hover:border hover:border-purple-500 px-4 py-2 transition-all duration-300">
+            <span className={`text-5xl sm:text-6xl group block sm:ml-20 w-fit hover:text-purple-500 hover:border hover:border-purple-500 sm:px-4 py-2 transition-all duration-300 font-semibold ${isSmallScreen ? 'animated-text' : ''}`}>
               Engineer
             </span>
-          </p>
-          
+        </p>
+        <div>  
           <a
               href="#about"
-            className="text-purple-500 ml-16 sm:ml-24 mt-5 sm:mt-3 transition-all inline-block"
+            className="text-purple-500 ml-auto sm:ml-24 mt-7 sm:mt-5 transition-all inline-block font-semibold"
           >
             About me &gt;
           </a>
+        </div>
         </div>
 
             {!isSmallScreen && (
@@ -75,6 +76,7 @@ const Home = () => {
             </div>
             )}
       </div>
+      
       
 
       <div id="about">

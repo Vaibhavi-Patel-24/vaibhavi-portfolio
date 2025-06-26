@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="navbar bg-neutral text-white px-6 py-4">
         <div className="flex justify-between items-center w-full">
           {/* Left side (Logo) */}
-          <h2 className="font-nunito text-[16px] border-2 p-2 rounded-2xl animate-bounce">Vaibhavi Patel</h2>
+          <h2 className="font-nunito text-[16px] border-2 p-2 rounded-2xl">Vaibhavi Patel</h2>
 
           {/* Show desktop menu if screen is wide */}
           {showDesktopMenu ? (
@@ -82,28 +82,28 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-base-content text-base-100 z-50 p-4 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-full bg-black text-white z-50 p-4 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <button
-          className="btn btn-ghost absolute top-2 right-2"
+          className="btn btn-ghost absolute top-2 right-2 text-purple-500"
           onClick={() => setIsOpen(false)}
         >
           ✕
         </button>
-        <ul className="text-purple-500 menu mt-24 gap-10 font-nunito font-bold text-xl flex justify-center items-center mx-auto">
+        <ul className="text-purple-500 menu mt-44 gap-10 font-nunito font-bold text-2xl flex justify-center items-center mx-auto">
            <li className='clicked:text-white'>
-            <a href="#about">About</a>
+            <a href="#about" onClick={() => setIsOpen(false)}>About</a>
           </li>
           <li className="clicked:text-white">
-            <a href="#skills">Skills</a>
+            <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
           </li>
           <li className="clicked:text-white">
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
           </li>
           <li className="clicked:text-white">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
            </li>
         </ul>
       </div>
