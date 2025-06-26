@@ -24,7 +24,7 @@ const Projects = () => {
    <div className='pt-18'>
    <hr className='text-purple-500 ml-10 mr-10'/>
 
-          <div className="relative w-2/3 h-96 mx-auto my-10 rounded-xl shadow-md overflow-hidden group">
+          <div className="relative w-2/3 h-110 mx-auto my-10 rounded-xl shadow-md overflow-hidden group">
             {/* Background image */}
             <div
               className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-45"
@@ -87,7 +87,7 @@ secure JWT-based login and logout functionality. Designed for direct messaging b
 
  
 
-       <div className="relative w-2/3 h-96 mx-auto my-10 rounded-xl shadow-md overflow-hidden group">
+       <div className="relative w-2/3 h-110 mx-auto my-10 rounded-xl shadow-md overflow-hidden group">
           {/* Background image */}
           <div
             className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-45"
