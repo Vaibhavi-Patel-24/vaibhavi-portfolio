@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-content text-base-100 px-6 py-4">
+      <div className="navbar bg-neutral text-white px-6 py-4">
         <div className="flex justify-between items-center w-full">
           {/* Left side (Logo) */}
           <h2 className="font-nunito text-[16px] border-2 p-2 rounded-2xl animate-bounce">Vaibhavi Patel</h2>

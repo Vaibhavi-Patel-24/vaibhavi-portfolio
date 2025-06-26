@@ -51,7 +51,7 @@ const fadeInUp = {
 
 const Skills = () => {
   return (
-    <div className="text-white bg-base-content w-full font-nunito py-1   flex flex-col gap-5 items-center overflow-hidden">
+    <div className="text-white bg-neutral w-full font-nunito py-1   flex flex-col gap-5 items-center overflow-hidden">
 
       {/* Heading */}
       {/* Lottie Animation Instead of Heading */}

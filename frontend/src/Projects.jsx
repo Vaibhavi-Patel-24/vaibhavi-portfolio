@@ -7,21 +7,19 @@ import { useEffect, useState } from "react";
 const Projects = () => {
   const [showOverlay, setShowOverlay] = useState(false);
 
-  useEffect(() => {
-    // Only run this on small screens
-    if (window.innerWidth < 768) {
-      const timeoutIn = setTimeout(() => setShowOverlay(true), 3000); // Show after 3 sec
-      const timeoutOut = setTimeout(() => setShowOverlay(false), 6000); // Hide after 6 sec
+ useEffect(() => {
+  if (window.innerWidth < 768) {
+    const interval = setInterval(() => {
+      setShowOverlay(prev => !prev);
+    }, 5000);
 
-      return () => {
-        clearTimeout(timeoutIn);
-        clearTimeout(timeoutOut);
-      };
-    }
-  }, []);
+    return () => clearInterval(interval);
+  }
+}, []);
+
   return (
    <>
-   <div className='pt-18'>
+   <div className='pt-18 bg-neutral'>
    <hr className='text-purple-500 ml-10 mr-10'/>
 
           <div className="relative w-2/3 h-110 mx-auto my-10 rounded-xl shadow-md overflow-hidden group">

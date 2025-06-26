@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="bg-base-content min-h-screen flex  items-center justify-center px-6 py-6 w-screen">
+    <div className="bg-neutral min-h-screen flex  items-center justify-center px-6 py-6 w-screen">
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }} 
         animate={{ opacity: 1, scale: 1 }} 

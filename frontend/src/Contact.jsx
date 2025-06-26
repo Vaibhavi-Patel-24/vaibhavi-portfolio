@@ -4,7 +4,7 @@ import linkedin from './assets/linkedin.svg';
 
 const Contact = () => {
   return (
-    <div className="bg-base-content w-full flex flex-col items-center justify-center text-white px-6 py-18 font-nunito space-y-5">
+    <div className="bg-neutral w-full flex flex-col items-center justify-center text-white px-6 py-18 font-nunito space-y-5">
 
       {/* Paragraph */}
       <p className="text-center text-gray-300 max-w-xl text-sm md:text-base">

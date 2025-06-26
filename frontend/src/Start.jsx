@@ -13,9 +13,9 @@ const Start = () => {
   }, [navigate]);
 
   return (
-    <div className="bg-base-content min-h-screen w-screen flex items-center justify-center">
+    <div className="bg-neutral min-h-screen w-screen flex items-center justify-center">
       <div className="animate-bounce">
-        <h2 className="text-base-100 text-center text-[15px] border-2 p-2 rounded-2xl">
+        <h2 className="text-white text-center text-[15px] border-2 p-2 rounded-2xl">
           Vaibhavi Patel
         </h2>
       </div>
