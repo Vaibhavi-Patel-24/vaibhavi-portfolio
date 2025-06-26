@@ -78,8 +78,8 @@ const Projects = () => {
                 showOverlay ? "opacity-100" : "opacity-0 group-hover:opacity-100"
               }`}
             >
-              <div className="text-white text-sm font-courgette max-h-40 overflow-y-auto sm:max-h-full">
-              <p className="text-white text-md font-courgette ">
+            <div className="text-white text-lg font-nunito max-h-40 overflow-y-auto sm:max-h-full">
+              <p className="text-white text-lg font-nunito ">
 secure JWT-based login and logout functionality. Designed for direct messaging between authenticated users, the app features real-time communication via Socket.io, complete with message timestamps for clear chat history tracking. User sessions are protected using JSON Web Tokens, and the backend efficiently handles message routing and storage. With a responsive, modern React frontend and a Node/Express backend, this project offers a smooth and secure chatting experience without public registration, making it ideal for controlled-access platforms.              </p>
             </div>
             </div>
@@ -143,8 +143,8 @@ secure JWT-based login and logout functionality. Designed for direct messaging b
               showOverlay ? "opacity-100" : "opacity-0 group-hover:opacity-100"
             }`}
           >
-            <div className="text-white text-sm font-courgette max-h-40 overflow-y-auto sm:max-h-full">
-            <p className="text-white text- font-courgette ">
+            <div className="text-white text-lg font-nunito max-h-40 overflow-y-auto sm:max-h-full">
+            <p className="text-white text-lg font-nunito ">
 City Support is a web application designed to improve how users locate, access, and interact with municipal services. Addressing the inefficiencies of current systems, the platform offers accurate, up-to-date information on local facilities, including service details, operating hours, and fees. It empowers residents, tourists, and business owners by providing centralized access to essential services, navigation tools, and a dedicated interface for feedback and communication. The system also allows service providers to update their offerings, fostering transparency and better engagement between users and municipal authorities.
             </p>
             </div>
